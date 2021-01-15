@@ -1,0 +1,250 @@
+@font-face {
+  font-family: texgyreheros;
+  src: url('fonts/texgyreheros-regular.otf');
+}
+
+@font-face {
+  font-family: texgyreherosBold;
+  src: url('fonts/texgyreheros-bold.otf');
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        box-sizing: border-box;
+    }
+
+body {
+  touch-action: manipulation;
+}
+
+.websiteContainer {
+  width: 100%;
+  max-width: 880px;
+  text-align: left;
+  padding-bottom: 64px;
+}
+
+.headerContainer {
+  background-color: white;
+  position: fixed;
+  width: 50%;
+  max-width: 440px;
+  height: 64px;
+  z-index: 3;
+}
+
+.headerText {
+  font-family: texgyreherosBold;
+  letter-spacing: -1px;
+  font-size: 20px;
+  padding-top: 16px;
+  padding-left: 32px;
+  cursor: pointer;
+
+}
+
+.rowContainer {
+  padding-top: 48px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  max-width: 800px;
+  padding: 16px;
+  padding-bottom: 16px;
+  height: auto;
+  background-color: white;
+}
+
+#infoColumn {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 48px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .headerContainer {
+    width: 100%;
+    max-width: 10000px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  #infoColumn {
+    position: static;
+  }
+
+  .introductionText {
+    font-size: 36px;
+  }
+}
+
+.collapsibleContainer {
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  border-top: 1px solid black;
+  font-family: texgyreherosBold;
+  letter-spacing: -1px;
+  vertical-align: middle;
+}
+
+.active, .collapsible:hover {
+
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  width: auto;
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: left;
+  font-size: 16px;
+  font-family: texgyreheros;
+  line-height: 24px;
+}
+
+.contentContainer {
+  padding-bottom: 20px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.collapsibleContentImage {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+.introductionContainer {
+  width: 100%;
+  height: auto;
+  padding-bottom: 16px;
+}
+.introductionText {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  width: 95%;
+  font-family: texgyreheros;
+  letter-spacing: -0.5px;
+  font-size: 20px;
+  padding-left: 16px;
+  line-height: 24px;
+  background-color: white;
+}
+
+.pageTitleText {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  width: 95%;
+  font-family: texgyreherosBold;
+  letter-spacing: -0.5px;
+  font-size: 32px;
+  padding-left: 16px;
+  line-height: 24px;
+  background-color: white;
+}
+
+.sectionText {
+  font-family: texgyreheros;
+  letter-spacing: -0.5px;
+  font-size: 16px;
+  padding-top: 48px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  width: 90%;
+  line-height: 20px;
+  background-color: white;
+}
+
+#firstSectionText {
+  padding-top: 0px;
+}
+
+.linksContainer {
+  width: 90%;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  height: auto;
+}
+
+.linkUnitContainer {
+  padding-right: 4px;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.nestedLinkUnitContainer {
+  padding-right: 4px;
+  padding-bottom: 28px;
+  padding-top: 28px;
+  display: inline-block;
+}
+
+.linkText {
+  border: 1px solid black;
+  border-radius: 100px;
+  display: block-inline;
+  font-family: texgyreheros;
+  text-decoration: none;
+  letter-spacing: 0px;
+  font-size: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  color: black;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+}
