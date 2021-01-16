@@ -186,6 +186,18 @@ body {
   background-color: white;
 }
 
+.essayContentText {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  width: 95%;
+  letter-spacing: 0px;
+  font-size: 16px;
+  padding-left: 16px;
+  line-height: 24px;
+  background-color: white;
+}
+
 .pageTitleText {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
@@ -195,7 +207,7 @@ body {
   letter-spacing: -0.5px;
   font-size: 32px;
   padding-left: 16px;
-  line-height: 24px;
+  line-height: 40px;
   background-color: white;
 }
 
@@ -252,4 +264,13 @@ body {
 a:hover {
   color: white;
   background-color: black;
+}
+.collapsibleTextLink {
+  color: blue;
+  text-decoration: underline;
+}
+
+.collapsibleTextLink:hover {
+  background-color: transparent;
+  color: purple;
 }
